@@ -163,7 +163,7 @@ module Kitchen
         super
 
         if config[:availability_zone].nil?
-          config[:availability_zone] = config[:region] + "b"
+          config[:availability_zone] = config[:region] + "c"
         elsif config[:availability_zone] =~ /^[a-z]$/
           config[:availability_zone] = config[:region] + config[:availability_zone]
         end
